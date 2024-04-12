@@ -42,7 +42,7 @@ namespace DotNET_DEMO
             c = Convert.ToInt32(Console.ReadLine());
 
             int max = (a > b) ? ((a > c) ? a:c):((b > c)?b :c);
-            Console.Write("The maximum number among 3 number is");
+            Console.Write($"The maximum number among 3 number is {max}");
         }
 
         public static void DivisibleBy3And5()
@@ -108,13 +108,18 @@ namespace DotNET_DEMO
             {
                 Console.Write(" You got F Grade");
             }
+            else
+            {
+                Console.Write(" You Failed");
+            }
 
         }
 
         static void Main(string[] args)
         {
+            MaxNumberUsingTernary();
             //DivisibleBy3And5();
-            PercentageAndGrade();
+            //PercentageAndGrade();
         }
 
     }
